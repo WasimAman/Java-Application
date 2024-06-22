@@ -1,0 +1,157 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#nav-bar{
+  width: 100vw;
+  height: 3.2rem;
+  background: linear-gradient(to right, #662d8c, #ed1e79);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .7rem;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+#logo h2{
+  color: aliceblue;
+  font-size: 1.25rem;
+}
+#nav-logo{
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
+
+#btns{
+  display: none;
+}
+#btns ul{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: .5rem;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a{
+  margin: 5px;
+  padding: 12px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  display: block;
+}
+
+ul li a:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-bar span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-bar span i{
+  font-size: 1.75rem;
+  color: aliceblue;
+}
+
+#slider{
+  display: none;
+}
+@media (min-width:700px) {
+  #nav-bar span{
+    display: none;
+  }
+
+  #nav-bar #btns{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-logo{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #logo h2{
+    font-size: 1.75rem;
+  }
+  #nav-bar{
+    padding: 0 2rem;
+  }
+  #nav-bar{
+    height: 4rem;
+  }
+}
+
+.hero-section{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+  43deg,
+  #4158d0 0%,
+  #c850c0 46%,
+  #ffcc70 100%
+  );
+}
+
+.left-section{
+  width: 55%;
+  padding:1.5rem 3rem;
+}
+
+.left-section h2{
+  font-size: 2rem;
+  color: antiquewhite;
+}
+
+.left-section li{
+  padding-left: .2rem;
+  font-size: 1.1rem;
+  color: antiquewhite;
+}
+
+.left-section ol{
+  padding-left:1.2rem;
+  padding-top: .5rem;
+}
+
+.right-section{
+  padding: 1.4rem;
+}
